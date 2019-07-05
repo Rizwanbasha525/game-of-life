@@ -1,3 +1,2 @@
-FROM tomcat:8 
-WORKDIR /var/lib/jenkins/workspace/game/gameoflife-web/target/
-ADD gameoflife.war /usr/local/tomcat/webapps/
+FROM tomcat:8
+COPY /target/gameoflife.war /usr/local/tomcat/webapps/gameoflife.war
