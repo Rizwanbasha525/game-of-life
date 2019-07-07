@@ -1,2 +1,3 @@
 FROM tomcat:8
-COPY /target/gameoflife.war /usr/local/tomcat/webapps/
+ENV LOCATION=/var/lib/jenkins/workspace/game@2/gameoflife-web/target/gameoflife.war
+COPY $LOCATION  /usr/local/tomcat/webapps/
